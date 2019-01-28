@@ -11,7 +11,7 @@
 <body>
 	<header class="main-header">
 		<div class="header-top">
-			<a class="inner-header-logo" href="index.html">
+			<a class="main-header-logo" href="index.html">
 				<img src="img/" width="163" height="35" alt="Логотип «Девайс»">
 			</a>
 			<form class="form-header" action="">
@@ -86,9 +86,24 @@
 			<li class="breadcrumbs-current">Моноподы для селфи</li>
 		</ul>
 
-		<!--<section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>        
-      </section>-->
+		<section class="filters">
+			<h2 class="filters-title">Фильтр:</h2>
+		</section>
+
+		<section class="sorting">
+			<h2 class="sorting-title">Сортировка:</h2>
+			<ul class="sorting-list">
+				<li class="sorting-item">
+					<a href="#">По цене</a>
+				</li>
+				<li class="sorting-item">
+					<a href="#">По типу</a>
+				</li>
+				<li class="sorting-item">
+					<a href="#">По популярности</a>
+				</li>
+			</ul>
+		</section>
 
 		<section class="catalog">
 			<h2 class="visually-hidden">Список моноподов для селфи</h2>
@@ -115,8 +130,8 @@
 					</p>
 					<b class="catalog-item-price">1 500 руб.</b>
 					<p class="catalog-item-hover">
-						<button class="btn btn-basket">В корзину</button>
-						<button class="btn-add-compare">Добавить к сравнению</button>
+						<a class="btn btn-basket" href="#">В корзину</a>
+						<a class="btn-add-compare" href="#">Добавить к сравнению</a>
 					</p>
 				</li>
 				<li class="catalog-item">
@@ -128,8 +143,8 @@
 					</p>
 					<b class="catalog-item-price">2 500 руб.</b>
 					<p class="catalog-item-hover">
-						<button class="btn btn-basket">В корзину</button>
-						<button class="btn-add-compare">Добавить к сравнению</button>
+						<a class="btn btn-basket" href="#">В корзину</a>
+						<a class="btn-add-compare" href="#">Добавить к сравнению</a>
 					</p>
 				</li>
 				<li class="catalog-item">
@@ -141,9 +156,26 @@
 					</p>
 					<b class="catalog-item-price">4 900 руб.</b>
 					<p class="catalog-item-hover">
-						<button class="btn btn-basket">В корзину</button>
-						<button class="btn-add-compare">Добавить к сравнению</button>
+						<a class="btn btn-basket" href="#">В корзину</a>
+						<a class="btn-add-compare" href="#">Добавить к сравнению</a>
 					</p>
+				</li>
+			</ul>
+			<ul class="pagination-list">
+				<li class="pagination-item">
+					<a class="btn-pagination btn-pagination-back" href="#">Назад</a>
+				</li>
+				<li class="pagination-item pagination-item-current">
+					<a href="#">1</a>
+				</li>
+				<li class="pagination-item">
+					<a href="#">2</a>
+				</li>
+				<li class="pagination-item">
+					<a href="#">3</a>
+				</li>
+				<li class="pagination-item">
+					<a class="btn-pagination btn-pagination-next" href="#">Вперед</a>
 				</li>
 			</ul>
 		</section>
