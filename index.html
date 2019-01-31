@@ -12,12 +12,12 @@
   <header class="main-header">
     <div class="header-top">
       <a class="main-header-logo">Device</a>
-      <form class="form-header" action="">
+      <form class="form-header" method="get" action="https://echo.htmlacademy.ru">
         <input type="search" name="search-site" placeholder="Поиск по сайту">
         <button class="btn btn-search">Найти</button>
       </form>
       <ul class="user-navigation">
-        <li class="login-link">
+        <li class="login-link"><!-- Оставить этот класс в li или перекинуть его в ссылку?(В демонстрации к лекции, класс добавлен к ссылке) -->
           <a href="#">Войти</a>
         </li>
         <li class="compare-link">
@@ -76,7 +76,7 @@
           <img src="img/png/slider-1.png" width="384" height="486" alt="Селфи палка">
           <b class="slider-goods-title">Делай селфи,<br> как Бен Стиллер!</b>
           <p class="slider-goods-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-          <a class="btn btn--details">Подробнее</a>
+          <a class="btn btn--details" href="#">Подробнее</a>
           <!--<span class=""></span>
           <span class=""></span>
           <span class=""></span>-->
@@ -97,7 +97,7 @@
           <img src="img/png/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
           <b class="slider-goods-title">Худеем<br> правильно!</b>
           <p class="slider-goods-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-          <a class="btn btn--details">Подробнее</a>
+          <a class="btn btn--details" href="#">Подробнее</a>
           <!--<span class=""></span>
           <span class=""></span>
           <span class=""></span>-->
@@ -114,7 +114,7 @@
           <img src="img/png/slider-3.png" width="526" height="334" alt="Квадрокоптер">
           <b class="slider-goods-title">Порхает как бабочка, жалит как пчела!</b>
           <p class="slider-goods-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-          <a class="btn btn--details">Подробнее</a>
+          <a class="btn btn--details" href="#">Подробнее</a>
           <!--<span class=""></span>
           <span class=""></span>
           <span class=""></span>-->
@@ -237,7 +237,9 @@
       <h2 class="contacts-title">Контакты</h2>
       <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
         работоспособность покупки. Всякое бывает.</p>
-      <a href="#"><img src="img/jpg/map.jpg" width="560" height="222" alt="Карта нашего местоположения"></a>
+      <a href="#">
+        <img src="img/jpg/map.jpg" width="560" height="222" alt="Карта нашего местоположения">
+      </a>
       <a class="btn btn-write-us" href="#">Напишите нам</a>
     </section>
   </main>
@@ -277,13 +279,13 @@
       <span class="footer-decorative-element"></span>
       <ul class="footer-social">
         <li>
-          <a class="social-btn" href="#">Фейсбук</a>
+          <a class="social-btn" href="#" aria-label="Фейсбук"></a>
         </li>
         <li>
-          <a class="social-btn" href="#">Инстаграм</a>
+          <a class="social-btn" href="#" aria-label="Инстаграм"></a>
         </li>
         <li>
-          <a class="social-btn" href="#">Твиттер</a>
+          <a class="social-btn" href="#" aria-label="Твиттер"></a>
         </li>
       </ul>
       <p class="footer-copyright">
@@ -296,25 +298,25 @@
     <h2 class="visually-hidden">Написать нам</h2>
     <form class="form-modal">
       <p class="form-block-item">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Имя Фамилия">
+        <label for="user-name">Ваше имя:</label>
+        <input type="text" id="user-name" name="name" placeholder="Имя Фамилия">
       </p>
       <p class="form-block-item">
-        <label for="email">Ваш e-mail:</label>
-        <input type="email" id="email" placeholder="email@example.com">
+        <label for="user-email">Ваш e-mail:</label>
+        <input type="email" id="user-email" name="email" placeholder="email@example.com">
       </p>
       <p class="form-block-item">
-        <label for="textarea">Текст письма:</label>
-        <textarea id="textarea" placeholder="В свободной форме"></textarea>
+        <label for="user-letter">Текст письма:</label>
+        <textarea id="user-letter" name="letter" placeholder="В свободной форме"></textarea>
       </p>
       <button class="btn btn-submit" type="submit">Отправить</button>
     </form>
-    <span class="modal-close">Закрыть</span>
+    <button class="btn btn-modal-close" type="button" aria-label="Закрыть"></button>
   </section>
   
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <span class="modal-close">Закрыть</span>
+    <button class="btn btn-modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 </body>
   
