@@ -1,0 +1,574 @@
+@font-face {
+	font-family: 'gilroyextrabold';
+	src: url('gilroyextrabold-webfont.woff2') format('woff2'),
+			 url('gilroyextrabold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'gilroylight';
+	src: url('gilroylight-webfont.woff2') format('woff2'),
+			 url('gilroylight-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	margin: 0;
+
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 300;
+	font-family: "Open Sans", "Arial", sans-serif;
+	color: rgba(70, 70, 70, 1);
+
+	background-color: rgb(255, 255, 255);
+}
+
+.inner-body {
+	font-size: 14px;
+	line-height: 24px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	display: inline-block;
+
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+	color: rgba(0, 0, 0, 1);
+	
+	border: none;
+}
+
+.btn:hover {
+	cursor: pointer;
+}
+
+.btn:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.header-index {
+	background-color: rgba(247, 226, 150, 1);
+}
+
+.form-header input[type="search"] {
+	color: rgba(0, 0, 0, 0.3);
+
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+}
+
+.form-header input[type="search"]:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.form-header input[type="search"]:focus {
+	color: rgba(0, 0, 0, 1);
+}
+
+.btn-search {
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 300;
+	font-family: "Open Sans", "Arial", sans-serif;
+	color: rgba(0, 0, 0, 1);
+
+	background-color: rgba(255, 255, 255, 1);
+	border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.btn-search:hover,
+.btn-search:focus {
+	color: rgba(255, 255, 255, 1);
+
+	background-color: rgba(0, 0, 0, 1);
+}
+
+.btn-search:active {
+	color: rgba(255, 255, 255, 0.3);
+
+	background-color: rgba(0, 0, 0, 1);
+}
+
+.user-navigation,
+.site-navigation,
+.submenu-site-navigation {
+	margin: 0;
+	padding: 0;
+	
+	list-style: none;
+}
+
+.user-navigation a,
+.site-navigation a,
+.submenu-site-navigation a {
+	color: rgba(0, 0, 0, 1);
+}
+
+.site-navigation-item a {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	text-transform: uppercase;
+}
+
+.submenu-site-navigation a {
+	font-size: 15px;
+	line-height: 36px;
+	font-weight: 300;
+	font-family: "Open Sans", "Arial", sans-serif;
+	text-transform: none;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus,
+.site-navigation a:hover,
+.site-navigation a:focus,
+.submenu-site-navigation a:hover,
+.submenu-site-navigation a:focus {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.user-navigation a:active,
+.site-navigation a:active,
+.submenu-site-navigation a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.output-link a {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.output-link a:hover,
+.output-link a:focus {
+	color: rgba(0, 0, 0, 1);
+}
+
+.output-link a:active {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+
+/* Слайдер товаров */
+
+
+.slider-goods-list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.slider-goods-title {
+	font-size: 47px;
+	line-height: 56px;
+	font-weight: 700;
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	color: rgba(0, 0, 0, 1);
+}
+
+.slider-goods-table {
+	border-collapse: collapse;
+}
+
+.slider-goods-table tr:first-child td {
+	font-size: 36px;
+	line-height: 48px;
+	font-family: "gilroylight", "Arial", sans-serif;
+	color: rgba(0, 0, 0, 1);
+}
+
+.slider-goods-table tr:last-child td {
+	font-size: 13px;
+	line-height: 20px;
+}
+
+
+/* Главные товары */
+
+
+.main-goods-list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.main-goods-item a {
+	font-size: 18px;
+	line-height: 24px;
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	text-transform: none;
+	color: rgba(0, 0, 0, 1);
+}
+
+.main-goods-item a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* Как мы работаем */
+
+
+.our-service-list,
+.service-description-list  {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.btn-service:active {
+	color: rgba(247, 225, 132, 1);
+
+	background-color: rgba(0, 0, 0, 1);
+}
+
+.service-title {
+	font-size: 47px;
+	line-height: 1;
+	font-weight: 700;
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	color: rgba(0, 0, 0, 1);
+}
+
+
+/* Наши партнеры*/
+
+
+.our-service {
+	background-color: rgba(229, 229, 229, 1);
+}
+
+.our-partners-list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+
+/* О нас, Контакты*/
+
+
+.about-us-title,
+.contacts-title {
+	font-size: 47px;
+	line-height: 48px;
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	color: rgba(0, 0, 0, 1);
+}
+
+.transport-company-list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.transport-company-item {
+	font-size: 16px;
+	line-height: 40px;
+	font-weight: 700;
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	color: rgba(0, 0, 0, 1);
+}
+
+
+/* Подвал */
+
+
+.main-footer {
+	background-color: rgba(70, 70, 70, 1);
+}
+
+.user-navigation-left,
+.user-navigation-right,
+.footer-site-navigation,
+.footer-social {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.user-navigation-left a,
+.user-navigation-right a {
+	line-height: 36px;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.user-navigation-left a:hover,
+.user-navigation-left a:focus,
+.user-navigation-right a:hover,
+.user-navigation-right a:focus {
+	color: rgba(255, 255, 255, 1);
+}
+
+.user-navigation-left a:active,
+.user-navigation-right a:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-address {
+	font-style: normal;
+	color: rgba(255, 255, 255, 1);
+}
+
+.footer-site-navigation-item a {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 1);
+}
+
+.footer-site-navigation-item a:hover,
+.footer-site-navigation-item a:focus {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-site-navigation-item a:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-tel {
+	color: rgba(255, 255, 255, 1);
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.social-btn {
+	color: rgba(255, 255, 255, 1);
+}
+
+
+/* Страница каталога */
+
+
+.page-title {
+	font-size: 47px;
+	line-height: 48px;
+	font-weight: 700;
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	color: rgba(0, 0, 0, 1);
+}
+
+.breadcrumbs-list,
+.form-filter ul,
+.sorting-list,
+.catalog-list,
+.pagination-list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.breadcrumbs-item a,
+.breadcrumbs-current {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs-item a:hover,
+.breadcrumbs-item a:focus {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs-item a:active {
+	color: rgba(0, 0, 0, 0.1);
+}
+
+.filter-title,
+.sorting-title {
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 1);
+}
+
+.form-filter fieldset {
+	border: none;
+}
+
+.form-filter legend {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	color: rgba(0, 0, 0, 1);
+}
+
+.filter-option label {
+	line-height: 40px;
+}
+
+.filter-input:disabled + label {
+	color: rgba(166, 166, 166, 1);
+}
+
+.sorting-item a {
+	line-height: 18px;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-item a:hover,
+.sorting-item a:focus {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-item a:active {
+	color: rgba(0, 0, 0, 1);
+}
+
+.sorting-item-current {
+	color: rgba(0, 0, 0, 1);
+}
+
+.catalog-item-title a {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	color: rgba(0, 0, 0, 1);
+}
+
+.catalog-item-price {
+	font-size: 16px;
+	line-height: 24px;
+	font-family: "gilroylight", "Arial", sans-serif;
+	color: rgba(70, 70, 70, 1);
+}
+
+.btn-add-compare {
+	font-size: 13px;
+	line-height: 20px;
+	font-family: "gilroylight", "Arial", sans-serif;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-add-compare:hover,
+.btn-add-compare:focus {
+	color: rgba(0, 0, 0, 1);
+}
+
+.btn-add-compare:active {
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.pagination-item .btn-pagination {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 1);
+}
+
+.btn-pagination-back:hover,
+.btn-pagination-back:focus,
+.btn-pagination-next:hover,
+.btn-pagination-next:focus {
+	background-color: rgba(0, 0, 0, 0.08);
+}
+
+.btn-pagination-back:active,
+.btn-pagination-next:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-item a {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-item a:active {
+	color: rgba(0, 0, 0, 1);
+}
+
+.pagination-item-current {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	color: rgba(0, 0, 0, 1);
+}
+
+.user-navigation-left .output-link a {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.user-navigation-left .output-link a:hover,
+.user-navigation-left .output-link a:focus {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.user-navigation-left .output-link a:active {
+	color: rgba(255, 255, 255, 1);
+}
+
+
+/* modal */
+
+
+.modal {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.form-modal label {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	font-family: "gilroyextrabold", "Arial", sans-serif;
+	color: rgba(0, 0, 0, 1);
+}
+
+.form-input,
+.form-textarea {
+	font-size: 14px;
+	line-height: 18px;
+	font-family: "Open Sans", "Arial", sans-serif;
+	color: rgba(70, 70, 70, 0.4);
+
+	background-color: rgba(229, 229, 229, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.form-input:hover,
+.form-textarea:hover {
+	background-color: rgba(229, 229, 229, 0.8);
+} 
+
+
+.form-input:focus,
+.form-textarea:focus {
+	color: rgba(70, 70, 70, 1);
+
+	background-color: rgba(255, 255, 255, 1);
+	border-color: rgba(240, 197, 46, 1);
+}
+
+.form-input:disabled {
+	background-color: rgba(237, 181, 181, 0.5);
+}

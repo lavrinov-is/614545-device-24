@@ -3,86 +3,92 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>HTML Academy: Девайс</title>
-	<link rel="stylesheet" href="css/">
+	<title>HTML Academy: Моноподы для селфи</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="inner-page">
 	<header class="main-header">
-		<div class="header-top">
-      <a class="main-header-logo" href="index.html">Device</a>
-			<form class="form-header" method="get" action="https://echo.htmlacademy.ru">
-				<input type="search" name="search-site" placeholder="Поиск по сайту">
-				<button class="btn btn-search">Найти</button>
-			</form>
-			<ul class="user-navigation-left">
-				<li class="profile-link">
-					<a href="profile.html">Валентин Петухов</a>
-				</li>
-				<li class="output-link">
-					<a href="">Выйти</a>
-				</li>
-			</ul>
-			<ul class="user-navigation-right">
-				<li class="compare-link">
-					<a href="#">Сравнить</a>
-				</li>
-				<li class="backet-link">
-					<a href="#">Корзина</a>
-				</li>
-			</ul>
+		<div class="header-index">
+			<div class="header-top">
+				<a class="main-header-logo" href="index.html">
+					<img src="img/svg/logo-device.svg" width="163" height="35" alt="Логотип DEVICE">
+				</a>
+				<form class="form-header" method="get" action="https://echo.htmlacademy.ru">
+					<input type="search" name="search-site" placeholder="Поиск по сайту">
+					<button class="btn btn-search">Найти</button>
+				</form>
+				<ul class="user-navigation">
+					<li class="profile-link">
+						<a href="profile.html">Валентин Петухов</a>
+					</li>
+					<li class="output-link">
+						<a href="">Выйти</a>
+					</li>
+					<li class="compare-link">
+						<a href="#">Сравнить</a>
+					</li>
+					<li class="backet-link">
+						<a href="#">Корзина</a>
+					</li>
+				</ul>
+			</div>
+			<nav class="main-navigation">
+				<ul class="site-navigation">
+					<li class="site-navigation-item">
+						<a class="products-item" href="#">Каталог товаров</a>
+						<ul class="submenu-site-navigation">
+							<li>
+								<a href="#">Виртуальная реальность</a>
+							</li>
+							<li class="site-navigation-current">
+								<a href="#">Моноподы для селфи</a>
+							</li>
+							<li>
+								<a href="#">Экшн-камеры</a>
+							</li>
+							<li>
+								<a href="#">Фитнес-браслеты</a>
+							</li>
+							<li>
+								<a href="#">Умные часы</a>
+							</li>
+							<li>
+								<a href="#">Квадрокоптеры</a>
+							</li>
+						</ul>
+					</li>
+					<li class="site-navigation-item">
+						<a href="#">Доставка</a>
+					</li>
+					<li class="site-navigation-item">
+						<a href="#">Гарантия</a>
+					</li>
+					<li class="site-navigation-item">
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
-		<nav class="main-navigation">
-			<ul class="site-navigation">
-				<li>
-					<a class="products-item" href="#">Каталог товаров</a>
-					<ul class="submenu-site-navigation">
-						<li>
-							<a href="#">Виртуальная реальность</a>
-						</li>
-						<li class="site-navigation-current">
-							<a href="#">Моноподы для селфи</a>
-						</li>
-						<li>
-							<a href="#">Экшн-камеры</a>
-						</li>
-						<li>
-							<a href="#">Фитнес-браслеты</a>
-						</li>
-						<li>
-							<a href="#">Умные часы</a>
-						</li>
-						<li>
-							<a href="#">Квадрокоптеры</a>
-						</li>
-					</ul>
-				</li>
-				<li class="delivery-item">
-					<a href="#">Доставка</a>
-				</li>
-				<li class="guarantee-item">
-					<a href="#">Гарантия</a>
-				</li>
-				<li class="contacts-item">
-					<a href="#">Контакты</a>
-				</li>
-			</ul>
-		</nav>
 	</header>
 	<main class="container">
 
 		<h1 class="page-title">Моноподы для селфи</h1>
 
-		<ul class="breadcrumbs">
-			<li class="breadcrumbs-item">
-				<a href="index.html">Главная</a>
-			</li>
-			<li class="breadcrumbs-item">
-				<a href="catalog.html">Каталог товаров</a>
-			</li>
-			<li class="breadcrumbs-item breadcrumbs-current">Моноподы для селфи</li>
-		</ul>
+		<section class="breadcrumbs">
+			<h2 class="visually-hidden">Навигационная цепочка</h2>
+			<ul class="breadcrumbs-list">
+				<li class="breadcrumbs-item">
+					<a href="index.html">Главная</a>
+				</li>
+				<li class="breadcrumbs-item">
+					<a href="catalog.html">Каталог товаров</a>
+				</li>
+				<li class="breadcrumbs-item breadcrumbs-current">Моноподы для селфи</li>
+			</ul>
+		</section>
 
 		<section class="filters">
 			<h2 class="filter-title">Фильтр:</h2>
@@ -101,7 +107,7 @@
 							<label for="filter-color-black">Черный</label>
 						</li>
 						<li class="filter-option">
-							<input class="visually-hidden filter-input filter-input-checkbox" id="filter-color-white" type="checkbox" name="color-white">
+							<input class="visually-hidden filter-input filter-input-checkbox" id="filter-color-white" type="checkbox" name="color-white" disabled>
 							<label for="filter-color-white">Белый</label>
 						</li>
 						<li class="filter-option">
@@ -138,9 +144,7 @@
 		<section class="sorting">
 			<h2 class="sorting-title">Сортировка:</h2>
 			<ul class="sorting-list">
-				<li class="sorting-item">
-					<a href="#">По цене</a>
-				</li>
+				<li class="sorting-item sorting-item-current">По цене</li>
 				<li class="sorting-item">
 					<a href="#">По типу</a>
 				</li>
@@ -206,13 +210,14 @@
 					</p>
 				</li>
 			</ul>
+		</section>
+		<section class="pagination">
+			<h2 class="visually-hidden">Нумерация страниц</h2>
 			<ul class="pagination-list">
 				<li class="pagination-item">
 					<a class="btn-pagination btn-pagination-back" href="#">Назад</a>
 				</li>
-				<li class="pagination-item pagination-item-current">
-					<a href="#">1</a>
-				</li>
+				<li class="pagination-item pagination-item-current">1</li>
 				<li class="pagination-item">
 					<a href="#">2</a>
 				</li>
@@ -227,7 +232,9 @@
 	</main>
 	<footer class="main-footer">
 		<div class="footer-top">
-      <a class="main-footer-logo" href="index.html">Device</a>
+      <a class="main-footer-logo" href="index.html">
+        <img src="img/svg/logo-device.svg" width="163" height="35" alt="Логотип DEVICE">
+      </a>
 			<ul class="user-navigation-left">
 				<li class="profile-link">
 					<a href="profile.html">Валентин Петухов</a>
@@ -246,23 +253,23 @@
 			</ul>
 		</div>
 		<div class="footer-middle">
-			<address class="footer-address">г. Москва, ул. Строителей, 15</address>
-			<ul class="footer-site-navigation">
-				<li class="delivery-item">
-					<a href="#">Доставка</a>
-				</li>
-				<li class="guarantee-item">
-					<a href="#">Гарантия</a>
-				</li>
-				<li class="contacts-item">
-					<a href="#">Контакты</a>
-				</li>
-			</ul>
-			<p class="footer-tel">Тел.: +7 (495) 495-95-95</p>
-		</div>
-		<div class="footer-bottom">
-			<span class="footer-decorative-element"></span>
-			<ul class="footer-social">
+      <address class="footer-address">г. Москва, ул. Строителей, 15</address>
+      <ul class="footer-site-navigation">
+        <li class="footer-site-navigation-item">
+          <a href="#">Доставка</a>
+        </li>
+        <li class="footer-site-navigation-item">
+          <a href="#">Гарантия</a>
+        </li>
+        <li class="footer-site-navigation-item">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <p class="footer-tel">Тел.: +7 (495) 495-95-95</p>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-decorative-element"></span>
+      <ul class="footer-social">
         <li>
           <a class="social-btn" href="#" aria-label="Фейсбук"></a>
         </li>
@@ -273,10 +280,10 @@
           <a class="social-btn" href="#" aria-label="Твиттер"></a>
         </li>
       </ul>
-			<p class="footer-copyright">
-				<a class="copyright-btn" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-			</p>
-		</div>
+      <p class="footer-copyright">
+        <a class="copyright-btn" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Разработано HTML Academy"></a>
+      </p>
+    </div>
 	</footer>
 </body>
 
