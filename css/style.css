@@ -1,11 +1,15 @@
 @font-face {
 	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 800;
 	src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2'),
 			 url('../fonts/gilroyextrabold-webfont.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 300;
 	src: url('../fonts/gilroylight-webfont.woff2') format('woff2'),
 			 url('../fonts/gilroylight-webfont.woff') format('woff');
 }
