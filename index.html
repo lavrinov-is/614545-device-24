@@ -41,33 +41,35 @@
       <nav class="main-navigation">
         <div class="main-navigation-wrapper">
           <ul class="site-navigation site-navigation-left">
-            <li class="site-navigation-item">
-              <a class="site-catalog-goods" href="#">Каталог товаров</a>
+            <li class="site-navigation-item site-navigation-submenu">
+              <a href="#">Каталог товаров</a>
               <div class="submenu-catalog">
-                <ul class="submenu-catalog-list">
-                  <li class="submenu-catalog-item">
-                    <a href="">Виртуальная реальность</a>
-                  </li>
-                  <li class="submenu-catalog-item">
-                    <a href="catalog.html">Моноподы для селфи</a>
-                  </li>
-                  <li class="submenu-catalog-item">
-                    <a href="">Экшн-камеры</a>
-                  </li>
-                </ul>
-                <ul class="submenu-catalog-list">
-                  <li class="submenu-catalog-item">
-                    <a href="">Фитнес-браслеты</a>
-                  </li>
-                  <li class="submenu-catalog-item">
-                    <a href="">Умные часы</a>
-                  </li>
-                </ul>
-                <ul class="submenu-catalog-list">
-                  <li class="submenu-catalog-item">
-                    <a href="">Квадрокоптеры</a>
-                  </li>
-                </ul>
+                <div class="submenu-catalog-wrapper">
+                  <ul class="submenu-catalog-list">
+                    <li class="submenu-catalog-item">
+                      <a href="">Виртуальная реальность</a>
+                    </li>
+                    <li class="submenu-catalog-item">
+                      <a href="catalog.html">Моноподы для селфи</a>
+                    </li>
+                    <li class="submenu-catalog-item">
+                      <a href="">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                  <ul class="submenu-catalog-list">
+                    <li class="submenu-catalog-item">
+                      <a href="">Фитнес-браслеты</a>
+                    </li>
+                    <li class="submenu-catalog-item">
+                      <a href="">Умные часы</a>
+                    </li>
+                  </ul>
+                  <ul class="submenu-catalog-list">
+                    <li class="submenu-catalog-item">
+                      <a href="">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </li>
           </ul>
@@ -223,14 +225,14 @@
       <h2 class="visually-hidden">Как мы работаем</h2>
       <div class="our-service-wrapper container">
         <ul class="our-service-list">
-          <li class="our-service-item">
-            <button class="btn btn-service">Доставка</button>
+          <li class="our-service-item our-service-item-current">
+            <button class="btn btn-service btn-service-current">Доставка</button>
           </li>
           <li class="our-service-item">
             <button class="btn btn-service">Гарантия</button>
           </li>
           <li class="our-service-item">
-            <button class="btn btn-service btn-service-current">Кредит</button>
+            <button class="btn btn-service">Кредит</button>
           </li>
         </ul>
         <ul class="service-description-list">
@@ -334,7 +336,6 @@
         <p class="footer-tel">Тел.: +7 (495) 495-95-95</p>
       </div>
       <div class="footer-bottom">
-        <div class="footer-decorative-element"></div>
         <div class="footer-social">
           <ul class="footer-social-list">
             <li class="footer-social-item">
@@ -369,6 +370,9 @@
         </div>
         <div class="footer-copyright">
           <a class="copyright-btn" href="https://htmlacademy.ru/intensive/htmlcss" target="_black">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
+              <path fill="#FFC600" d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z" />
+            </svg>
             <span class="visually-hidden">Разработано HTML Academy</span>
           </a>
         </div>
