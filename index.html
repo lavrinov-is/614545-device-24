@@ -15,7 +15,7 @@
       <div class="header-top">
         <div class="header-top-wrapper">
           <a class="main-header-logo" href="index.html">
-              <img src="img/svg/logo-device.svg" width="163" height="35" alt="Логотип DEVICE">
+            <img src="img/svg/logo-device.svg" width="163" height="35" alt="Логотип DEVICE">
           </a>
           <form class="form-header" method="get" action="https://echo.htmlacademy.ru">
             <input class="icon-header-search" type="search" name="search-site" placeholder="Поиск по сайту">
@@ -96,10 +96,8 @@
       <h2 class="visually-hidden">Наши популярные товары</h2>
       <div class="popular-goods-wrapper">
         <ol class="slider-goods-list">
-          <li class="slider-goods-item">
-            <div class="slider-goods-img slider-goods-img-slider">
-              <img src="img/png/slider-1.png" width="384" height="486" alt="Селфи палка">
-            </div>
+          <li class="slider-goods-item slider-first slider-show">
+            <img class="slider-goods-img-first" src="img/png/slider-1.png" width="384" height="486" alt="Селфи палка">
             <div class="slider-goods-right">
               <p class="slider-goods-title">Делай селфи,<br> как Бен Стиллер!</p>
               <p class="slider-goods-description">Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь,
@@ -107,11 +105,6 @@
                 метров длиной и весом всего 5 килограмм.</p>
               <div class="slider-goods-details">
                 <a class="btn btn-goods-details" href="#">Подробнее</a>
-                <div class="slider-controls">
-                  <span class="active btn-slider-controls"></span>
-                  <span class="btn-slider-controls"></span>
-                  <span class="btn-slider-controls"></span>
-                </div>
               </div>
               <table class="slider-goods-table">
                 <tr class="table-tr">
@@ -127,10 +120,8 @@
               </table>
             </div>
           </li>
-          <li class="slider-goods-item">
-            <div class="slider-goods-img slider-goods-img-slider">
-              <img src="img/png/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
-            </div>
+          <li class="slider-goods-item slider-second">
+            <img class="slider-goods-img-second" src="img/png/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
             <div class="slider-goods-right">
               <p class="slider-goods-title">Худеем<br> правильно!</p>
               <p class="slider-goods-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не<br> пропускать
@@ -138,11 +129,6 @@
                 соблюдать диету.</p>
               <div class="slider-goods-details">
                 <a class="btn btn-goods-details" href="#">Подробнее</a>
-                <div class="slider-controls">
-                  <span class="btn-slider-controls"></span>
-                  <span class="active btn-slider-controls"></span>
-                  <span class="btn-slider-controls"></span>
-                </div>
               </div>
               <table class="slider-goods-table">
                 <tr class="table-tr">
@@ -154,10 +140,8 @@
               </table>
             </div>
           </li>
-          <li class="slider-goods-item">
-            <div class="slider-goods-img slider-goods-img-slider">
-              <img src="img/png/slider-3.png" width="526" height="334" alt="Квадрокоптер">
-            </div>
+          <li class="slider-goods-item slider-third">
+            <img class="slider-goods-img-third" src="img/png/slider-3.png" width="526" height="334" alt="Квадрокоптер">
             <div class="slider-goods-right">
               <p class="slider-goods-title">Порхает как бабочка, жалит как пчела!</p>
               <p class="slider-goods-description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
@@ -165,11 +149,6 @@
               </p>
               <div class="slider-goods-details">
                 <a class="btn btn-goods-details" href="#">Подробнее</a>
-                <div class="slider-controls">
-                  <span class="btn-slider-controls"></span>
-                  <span class="btn-slider-controls"></span>
-                  <span class="active btn-slider-controls"></span>
-                </div>
               </div>
               <table class="slider-goods-table">
                 <tr class="table-tr">
@@ -183,6 +162,11 @@
               </table>
             </div>
           </li>
+          <div class="slider-controls">
+            <span class="btn-slider-controls btn-slider-1 btn-slider-active"></span>
+            <span class="btn-slider-controls btn-slider-2"></span>
+            <span class="btn-slider-controls btn-slider-3"></span>
+          </div>
         </ol>
       </div>
     </section>
@@ -233,31 +217,31 @@
       <h2 class="visually-hidden">Как мы работаем</h2>
       <div class="our-service-wrapper container">
         <ul class="our-service-list">
-          <li class="our-service-item our-service-item-current">
-            <button class="btn btn-service btn-service-current">Доставка</button>
+          <li class="our-service-item service-item-first our-service-item-current">
+            <button class="btn btn-service btn-service-1 btn-service-current">Доставка</button>
           </li>
-          <li class="our-service-item">
-            <button class="btn btn-service">Гарантия</button>
+          <li class="our-service-item service-item-second">
+            <button class="btn btn-service btn-service-2">Гарантия</button>
           </li>
-          <li class="our-service-item">
-            <button class="btn btn-service">Кредит</button>
+          <li class="our-service-item service-item-third">
+            <button class="btn btn-service btn-service-3">Кредит</button>
           </li>
         </ul>
         <ul class="service-description-list">
-          <li class="service-description-item">
+          <li class="service-description-item service-description-item-first service-show">
             <h3 class="service-title">Доставка</h3>
             <p class="service-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
                 бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
-          <li class="service-description-item">
+          <li class="service-description-item service-description-item-second">
             <h3 class="service-title">Гарантия</h3>
             <p class="service-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте,
-              мы выдадим вам новый. Товар, не дом, конечно же.</p>
+              мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
           </li>
-          <li class="service-description-item">
+          <li class="service-description-item service-description-item-third">
             <h3 class="service-title">Кредит</h3>
             <p class="service-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
-              наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+              наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.</p>
           </li>
         </ul>
       </div>
@@ -299,7 +283,7 @@
         <h2 class="contacts-title">Контакты</h2>
         <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить
           работоспособность покупки. Всякое бывает.</p>
-        <a class="contacts-map" href="#">
+        <a class="contacts-map" href="map.html">
           <img src="img/jpg/map.jpg" width="560" height="222" alt="Карта нашего местоположения">
         </a>
         <a class="btn btn-write-us" href="#">Напишите нам</a>
@@ -392,7 +376,7 @@
     </div>
   </footer>
   
-  <section class="modal modal-about-us">
+  <section class="modal modal-write-us">
     <h2 class="visually-hidden">Написать нам</h2>
     <form class="form-modal" method="post" action="https://echo.htmlacademy.ru">
       <p class="form-block-item">
@@ -414,8 +398,11 @@
   
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.527429315825614!3d55.68703098053581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1551007721084" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <button class="modal-map-close" type="button" aria-label="Закрыть"></button>
   </section>
+
+  <script src="js/script.js"></script>
 </body>
   
 </html>
