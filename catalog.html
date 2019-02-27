@@ -6,90 +6,82 @@
 	<title>HTML Academy: Моноподы для селфи</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style-min.css">
 </head>
 
 <body class="inner-page">
 	<header class="main-header">
-		<div class="header-index">
-			<div class="header-top">
-				<div class="header-top-wrapper">
-					<a class="main-header-logo" href="index.html">
-						<img src="img/svg/logo-device.svg" width="163" height="35" alt="Логотип DEVICE">
-					</a>
-					<form class="form-header" method="get" action="https://echo.htmlacademy.ru">
-						<input type="search" name="search-site" placeholder="Поиск по сайту">
-						<button class="btn btn-search">Найти</button>
-					</form>
-					<div class="user-navigation">
-						<ul class="user-navigation-profile">
-							<li class="profile-link">
-								<a href="profile.html">Валентин Петухов</a>
+		<div class="header-top">
+			<a class="main-header-logo" href="index.html">
+				<img src="img/svg/logo-device.svg" width="163" height="35" alt="Логотип DEVICE">
+			</a>
+			<form class="form-header" method="get" action="https://echo.htmlacademy.ru">
+				<input class="input-header-search" type="search" name="search-site" placeholder="Поиск по сайту">
+				<button class="btn btn-search">Найти</button>
+			</form>
+			<div class="user-navigation">
+				<ul class="user-navigation-profile">
+					<li class="profile-link">
+						<a href="profile.html">Валентин Петухов</a>
+					</li>
+					<li class="output-link">
+						<a href="#">Выйти</a>
+					</li>
+				</ul>
+				<ul class="user-navigation-goods">
+					<li class="compare-link">
+						<a href="#">Сравнить</a>
+					</li>
+					<li class="backet-link">
+						<a href="#">Корзина</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<nav class="main-navigation">
+			<ul class="site-navigation site-navigation-left">
+				<li class="site-navigation-item site-navigation-submenu">
+					<a class="navigation-catalog-icon" href="#">Каталог товаров</a>
+					<div class="submenu-catalog">
+						<ul class="submenu-catalog-list">
+							<li class="submenu-catalog-item">
+								<a href="">Виртуальная реальность</a>
 							</li>
-							<li class="output-link">
-								<a href="#">Выйти</a>
+							<li class="submenu-catalog-item">
+								<a href="catalog.html">Моноподы для селфи</a>
+							</li>
+							<li class="submenu-catalog-item">
+								<a href="">Экшн-камеры</a>
 							</li>
 						</ul>
-						<ul class="user-navigation-goods">
-							<li class="compare-link">
-								<a href="#">Сравнить</a>
+						<ul class="submenu-catalog-list">
+							<li class="submenu-catalog-item">
+								<a href="">Фитнес-браслеты</a>
 							</li>
-							<li class="backet-link">
-								<a href="#">Корзина</a>
+							<li class="submenu-catalog-item">
+								<a href="">Умные часы</a>
+							</li>
+						</ul>
+						<ul class="submenu-catalog-list">
+							<li class="submenu-catalog-item">
+								<a href="">Квадрокоптеры</a>
 							</li>
 						</ul>
 					</div>
-				</div>
-			</div>
-			<nav class="main-navigation">
-        <div class="main-navigation-wrapper">
-          <ul class="site-navigation site-navigation-left">
-            <li class="site-navigation-item site-navigation-submenu">
-              <a class="navigation-catalog-icon" href="#">Каталог товаров</a>
-              <div class="submenu-catalog">
-                <div class="submenu-catalog-wrapper">
-                  <ul class="submenu-catalog-list">
-                    <li class="submenu-catalog-item">
-                      <a href="">Виртуальная реальность</a>
-                    </li>
-                    <li class="submenu-catalog-item">
-                      <a href="catalog.html">Моноподы для селфи</a>
-                    </li>
-                    <li class="submenu-catalog-item">
-                      <a href="">Экшн-камеры</a>
-                    </li>
-                  </ul>
-                  <ul class="submenu-catalog-list">
-                    <li class="submenu-catalog-item">
-                      <a href="">Фитнес-браслеты</a>
-                    </li>
-                    <li class="submenu-catalog-item">
-                      <a href="">Умные часы</a>
-                    </li>
-                  </ul>
-                  <ul class="submenu-catalog-list">
-                    <li class="submenu-catalog-item">
-                      <a href="">Квадрокоптеры</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <ul class="site-navigation site-navigation-right">
-            <li class="site-navigation-item">
-              <a href="#">Доставка</a>
-            </li>
-            <li class="site-navigation-item">
-              <a href="#">Гарантия</a>
-            </li>
-            <li class="site-navigation-item">
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-		</div>
+				</li>
+			</ul>
+			<ul class="site-navigation site-navigation-right">
+				<li class="site-navigation-item">
+					<a href="#">Доставка</a>
+				</li>
+				<li class="site-navigation-item">
+					<a href="#">Гарантия</a>
+				</li>
+				<li class="site-navigation-item">
+					<a href="#">Контакты</a>
+				</li>
+			</ul>
+		</nav>
 	</header>
 	<main>
 
@@ -223,7 +215,7 @@
 							<li class="catalog-item">
 								<div class="catalog-info-wrapper">
 									<h3 class="catalog-item-title">
-										<a href="#">Профессиональная<br> селфи-палка</a>
+										<a href="#">Профессиональная селфи-палка</a>
 									</h3>
 									<span class="catalog-item-price">1 500 руб.</span>
 								</div>
