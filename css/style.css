@@ -177,6 +177,7 @@ a {
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 	width: 440px;
+	margin-right: auto;
 }
 
 .input-header-search {
@@ -972,6 +973,7 @@ a {
 
 	font-size: 18px;
 	letter-spacing: 0.18px;
+	word-wrap: break-word;
 	
 	-webkit-transition: 0.2s ease-out;
     	 -o-transition: 0.2s ease-out;
